@@ -1,0 +1,62 @@
+/* Ogólne ustawienia strony */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4ff;
+    color: #222;
+}
+
+/* Nagłówek */
+header {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+/* Główna zawartość */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Nagłówki */
+h1, h2, h3 {
+    color: #1e3a8a;
+}
+
+/* Obraz */
+img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Efekt po najechaniu myszką na obraz */
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Audio i wideo */
+audio, iframe {
+    display: block;
+    margin: 15px auto;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    background: #1e3a8a;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
