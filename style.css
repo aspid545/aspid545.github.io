@@ -1,62 +1,77 @@
-/* Ogólne ustawienia strony */
+/* Ogólne ustawienia */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f4ff;
+    background: #e0e7ff;
     color: #222;
 }
 
 /* Nagłówek */
 header {
-    background: #1e3a8a;
+    background: #1e1e3f;
     color: white;
     text-align: center;
-    padding: 30px 10px;
+    padding: 25px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
 }
 
-/* Główna zawartość */
+/* Główna treść */
 main {
     max-width: 800px;
     margin: 30px auto;
     background: white;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Nagłówki */
-h1, h2, h3 {
-    color: #1e3a8a;
+/* Nagłówki sekcji */
+h2, h3 {
+    color: #3730a3;
 }
 
-/* Obraz */
+/* Obrazy */
 img {
     width: 100%;
-    max-width: 700px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 15px 0;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
 }
 
-/* Efekt po najechaniu myszką na obraz */
+/* Efekt po najechaniu na obraz */
 img:hover {
     transform: scale(1.03);
 }
 
-/* Audio i wideo */
+/* Audio i video */
 audio, iframe {
     display: block;
     margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* Porady */
+.tip {
+    background: #eef2ff;
+    border-left: 5px solid #4f46e5;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 8px;
 }
 
 /* Stopka */
 footer {
     text-align: center;
-    background: #1e3a8a;
+    background: #1e1e3f;
     color: white;
     padding: 15px;
-    margin-top: 20px;
-    font-size: 0.9em;
+    margin-top: 30px;
 }
+
+/* Efekt hover na linkach (jeśli dodasz w przyszłości) */
+a:hover {
+    color: #4f46e5;
+}
+
