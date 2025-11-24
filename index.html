@@ -4,62 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moje hobby – Astroneer</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background:#eef2f3; }
+        header, footer { text-align:center; padding:20px; background:#333; color:white; }
+
+        nav {
+            background:#4a90e2;
+            padding:10px;
+        }
+        nav ul { list-style:none; margin:0; padding:0; display:flex; gap:20px; }
+        nav a { color:white; text-decoration:none; font-weight:bold; }
+
+        section { padding:20px; margin:20px; border-radius:8px; }
+        #intro { background-color:#d0f0c0; }
+        #image { background-color:#ffd59e; }
+        #audio { background-color:#c0d9ff; float:left; width:45%; }
+        #video { background-color:#ffb3c6; float:right; width:45%; }
+        #tips { clear:both; background:#fafafa; }
+
+        article { background:white; padding:10px; border-radius:6px; margin-top:10px; }
+
+        aside {
+            background:#fff3cd;
+            padding:10px;
+            border-left:4px solid #ffca28;
+            margin-top:10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Moje hobby – Astroneer</h1>
+        <p>Odkrywanie kosmosu, budowanie baz i eksploracja nowych światów.</p>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#intro">Dlaczego lubię Astroneera</a></li>
+            <li><a href="#image">Zdjęcia</a></li>
+            <li><a href="#audio">Muzyka</a></li>
+            <li><a href="#video">Trailer</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section class="intro">
+        <section id="intro">
             <h2>Dlaczego lubię Astroneera?</h2>
-            <p>
-                Astroneer to gra przygodowa osadzona w kosmosie, w której można odkrywać planety,
+            <p>Astroneer to gra przygodowa osadzona w kosmosie, w której można odkrywać planety,
                 zbierać surowce i budować własne bazy. Uwielbiam ją za piękną grafikę, kreatywność
-                i spokojny klimat eksploracji.
-            </p>
+                i spokojny klimat eksploracji.</p>
+
+            <article>
+                <h3>Moje ulubione zajęcia w grze</h3>
+                <p>Najbardziej lubię tworzyć tunele pod powierzchnią planet i odkrywać ukryte jaskinie.</p>
+            </article>
         </section>
 
-        <section class="image">
-            <h3>Ulubione zdjęcie z gry</h3>
-            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/361420/ss_63402300a9d8f1eff80a3034b872995db03158ab.1920x1080.jpg?t=1756140414" alt="Astroneer - eksploracja planety">
+        <section id="image">
+            <h2>Ulubione zdjęcie z gry</h2>
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/361420/ss_63402300a9d8f1eff80a3034b872995db03158ab.1920x1080.jpg?t=1756140414" alt="Astroneer - eksploracja planety" width="100%">
+
+            <aside>
+                Zdjęcie przedstawia jedną z kolorowych planet pełnych surowców.
+            </aside>
         </section>
 
-        <section class="audio">
-            <h3>Muzyka w tle do grania 🎶</h3>
+        <section id="audio">
+            <h2>Muzyka w tle 🎶</h2>
             <audio controls>
                 <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
                 Twoja przeglądarka nie obsługuje odtwarzania dźwięku.
             </audio>
         </section>
 
-        <section class="video">
-            <h3>Trailer gry Astroneer 🎥</h3>
-            <iframe width="700" height="400"
+        <section id="video">
+            <h2>Trailer gry Astroneer 🎥</h2>
+            <iframe width="100%" height="300"
                 src="https://www.youtube.com/embed/UMLwzt5t9bs"
                 title="Astroneer - Official Trailer"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+                allowfullscreen></iframe>
         </section>
 
-        <div class="tip">
-            <h3>Porada gracza</h3>
-            <p>
-                Na początku warto zebrać dużo surowców i budować małe bazy, by móc spokojnie
-                eksplorować kolejne planety.
-            </p>
-        </div>
+        <section id="tips">
+            <h2>Porada gracza</h2>
+            <p>Na początku warto zebrać dużo surowców i budować małe bazy, by móc spokojnie eksplorować kolejne planety.</p>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Moje hobby – Astroneer</p>
+        <p>&copy; 2025 Moje hobby – Astroneer | Kontakt: astroneer@example.com</p>
     </footer>
 </body>
 </html>
-
 
 
 
